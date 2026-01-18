@@ -5,10 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TechWave</title>
     <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/tailwind.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body class="inter-font">
-    <h2 class="text-7xl">Starting the projects</h2>
+<body class="inter-font primary-bg-color primary-text-color">
+    <nav class="border-b-3 border-blue-950 py-4 sticky bg-transparent backdrop-blur-2xl">
+        <main class="flex w-[1200px] mx-auto justify-between items-center">
+            <a href="#">
+                <img src="./assets/logo.png" alt="" class="h-[36px]">
+            </a>
+            <ul class="flex gap-8 text-gray-300">
+                <li class="hover:border-b-2 hover:border-green-400"><a href="#">About</a></li>
+                <li class="hover:border-b-2 hover:border-green-400"><a href="#">Episodes</a></li>
+                <li class="hover:border-b-2 hover:border-green-400"><a href="#">Host</a></li>
+            </ul>
+            <button class="flex gap-1 primary-gradient-bg-color py-3 px-4 rounded-full font-medium hover:cursor-pointer hover:scale-[1.025]">
+                Subscribe
+                <img src="./assets/ArrowRight.png" alt="">
+            </button>
+        </main>
+    </nav>
+    <header class="header-section h-[800px] bg-cover bg-center bg-no-repeat">
+        <main class="flex w-[1200px] mx-auto flex flex-col justify-center items-center h-full relative">
+            <div class="hero-circle py-[90px] px-[120px] rounded-full bg-center bg-cover bg-no-repeat mb-10 hover:rotate-12 hover:scale-[1.05] relative">
+                <img src="./assets/microphone.png" alt="">
+            </div>
+            <div class="py-2 px-4 text-xl text-blue-950 absolute rounded-full font-bold badge-glow top-[16%] right-[38%]">
+                    NEW
+                </div>
+            <h1 class="text-6xl font-extrabold mb-2">TechWave</h1>
+            <p class="mb-6 font-normal text-gray-400">Your daily dose of tech insights, productivity hacks, and personal growth</p>
+            <div class="flex gap-2">
+                <button class="flex gap-1 primary-gradient-bg-color py-3 px-4 rounded-full font-medium hover:cursor-pointer hover:scale-[1.05]">
+                    <img src="./assets/btn-spotify.png" alt="">
+                    Listen on Spotify
+                </button>
+                <button class="flex gap-1 bg-transparent py-3 px-4 rounded-full font-bold text-green-500 border-2 hover:cursor-pointer hover:scale-[1.05] items-center">
+                    <img src="./assets/message.png" alt="" class="h-fit">
+                    Subscribe
+                </button>
+            </div>
+        </main>
+    </header>
+    
 </body>
 </html>

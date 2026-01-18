@@ -3,9 +3,54 @@
     --primary-text-color: #FFFFFF;
     --secondary-text-color: #00FF88;
     --primary-gradient: linear-gradient(
-        90deg, 
+        30deg, 
         #F7E93F 0%, 
         #FB09B4 51%, 
         #9100F8 100%
     );
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    transition: 300ms ease-in-out;
+}
+
+.inter-font {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.primary-bg-color {
+    background-color: var(--primary-bg-color);
+}
+
+.primary-text-color {
+    color: var(--primary-text-color);
+}
+
+.primary-gradient-bg-color {
+    background: var(--primary-gradient);
+}
+
+.primary-gradient-text-color {
+    background: var(--primary-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+/* header styles */
+
+.header-section {
+    background-image: url("../assets/hero-bg.png");
+}
+
+.hero-circle {
+    background-image: url("../assets/hero-circle.png");
+}
+
+.badge-glow {
+    box-shadow: 0px 0px 15px 0px rgb(160, 255, 160);
+    background-color: var(--secondary-text-color);
 }
