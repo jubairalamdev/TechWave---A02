@@ -8,7 +8,10 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body class="inter-font primary-bg-color primary-text-color">
-    <nav class="border-b-3 border-blue-950 py-4 sticky bg-transparent backdrop-blur-2xl">
+
+    <!-- navbar section here -->
+
+    <nav class="border-b-3 border-blue-950 py-4 fixed top-0 w-full z-50 primary-bg-color">
         <main class="flex w-[1200px] mx-auto justify-between items-center">
             <a href="#">
                 <img src="./assets/logo.png" alt="" class="h-[36px]">
@@ -24,12 +27,15 @@
             </button>
         </main>
     </nav>
-    <header class="header-section h-[800px] bg-cover bg-center bg-no-repeat">
+
+    <!-- Hero header section here -->
+
+    <header class="header-section h-[750px] bg-contain bg-center bg-no-repeat  mt-20">
         <main class="flex w-[1200px] mx-auto flex flex-col justify-center items-center h-full relative">
-            <div class="hero-circle py-[90px] px-[120px] rounded-full bg-center bg-cover bg-no-repeat mb-10 hover:rotate-12 hover:scale-[1.05] relative">
+            <div class="hero-circle py-[85px] px-[115px] rounded-full bg-center bg-cover bg-no-repeat mb-10 hover:rotate-12 hover:scale-[1.05] relative">
                 <img src="./assets/microphone.png" alt="">
             </div>
-            <div class="py-2 px-4 text-xl text-blue-950 absolute rounded-full font-bold badge-glow top-[16%] right-[38%]">
+            <div class="py-2 px-4 text-lg text-blue-950 absolute rounded-full font-bold badge-glow top-[15%] right-[37%]">
                     NEW
                 </div>
             <h1 class="text-6xl font-extrabold mb-2">TechWave</h1>
@@ -46,6 +52,37 @@
             </div>
         </main>
     </header>
-    
+    <main class="w-[1200px] mx-auto">
+
+        <!-- about section starts here -->
+
+        <section class="text-center mt-15 mb-28">
+            <h1 class="text-5xl font-bold mb-2">About The Podcast</h1>
+            <p class="font-normal text-gray-400 leading-8">TechWave is your go-to podcast for staying ahead in the fast-paced world of technology.
+            <br>We break down complex topics into digestible insights, explore productivity strategies that actually work,
+            <br>and share stories of personal growth from industry leaders.</p>
+            <p class="font-normal text-gray-400 mt-10">Join thousands of young professionals and tech enthusiasts who start their day with TechWave.</p>
+            <hr class="w-full  border-gray-800 my-20">
+            <div class="grid grid-cols-4 gap-20">
+                <div class="flex flex-col gap-4">
+                    <h3 class="font-extrabold secondary-text-color text-5xl">150k+</h3>
+                    <p class="font-light text-gray-400">MONTHLY LISTENERS</p>
+                </div>
+                <div class="flex flex-col gap-4">
+                    <h3 class="font-extrabold secondary-text-color text-5xl">200+</h3>
+                    <p class="font-light text-gray-400">EPISODES PUBLISHED</p>
+                </div>
+                <div class="flex flex-col gap-4">
+                    <h3 class="font-extrabold secondary-text-color text-5xl">4.9★</h3>
+                    <p class="font-light text-gray-400">AVERAGE RATING</p>
+                </div>
+                <div class="flex flex-col gap-4">
+                    <h3 class="font-extrabold secondary-text-color text-5xl">50+</h3>
+                    <p class="font-light text-gray-400">INDUSTRY EXPERTS</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
 </body>
 </html>
