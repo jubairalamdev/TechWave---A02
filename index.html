@@ -13,22 +13,22 @@
 
     <!-- navbar section here -->
 
-    <nav class="border-b-3 border-blue-950 py-4 fixed top-0 w-full z-50 primary-bg-color">
-        <main class="flex w-max-[1200px] mx-auto justify-between items-center max-[577px]:px-5 max-[577px]:justify-between">
+    <nav class="border-b-3 border-blue-950 py-4 max-[577px]:py-6 fixed top-0 w-full z-50 primary-bg-color">
+        <main class="flex w-full max-w-[1200px] mx-auto justify-between items-center max-[577px]:px-5 max-[577px]:justify-between">
             <a href="#">
                 <img src="./assets/logo.png" alt="" class="max-[577px]:h-5 h-[32px]">
             </a>
-            <ul class="flex gap-8 text-gray-300 max-[577px]:collapse">
+            <ul class="flex gap-8 text-gray-300 max-[577px]:hidden">
                 <li class="hover:border-b-2 hover:border-green-400"><a href="#">About</a></li>
                 <li class="hover:border-b-2 hover:border-green-400"><a href="#">Episodes</a></li>
                 <li class="hover:border-b-2 hover:border-green-400"><a href="#">Host</a></li>
             </ul>
             <button
-                class="flex gap-1 primary-gradient-bg-color py-3 px-4 rounded-full font-medium hover:cursor-pointer hover:scale-[1.025] max-[577px]:collapse">
+                class="flex gap-1 primary-gradient-bg-color py-3 px-4 rounded-full font-medium hover:cursor-pointer hover:scale-[1.025] max-[577px]:hidden">
                 Subscribe
                 <img src="./assets/ArrowRight.png" alt="">
             </button>
-            <button class="min-[577px]:collapse">
+            <button class="min-[577px]:hidden">
                 <img src="./assets/hamburger-menu.png" alt="menu-icon" class="w-6">
             </button>
         </main>
@@ -37,7 +37,7 @@
     <!-- Hero header section here -->
 
     <header class="header-section h-[750px] max-[577px]:h-[540px] bg-contain bg-center  mt-20 max-[577px]:bg-no-repeat max-[577px]:bg-cover">
-        <main class="flex w-max-[1200px] mx-auto flex flex-col justify-center items-center h-full relative">
+        <main class="flex w-full max-w-[1200px] mx-auto flex flex-col justify-center items-center h-full relative">
             <div class="hero-circle py-[85px] px-[115px] rounded-full bg-center bg-cover bg-no-repeat mb-10 hover:rotate-12 hover:scale-[1.05] relative max-[577px]:px-[77px] max-[577px]:py-[60px]">
                 <img src="./assets/microphone.png" alt="" class="hero-mic-img max-[577px]:w-[70px]">
             </div>
@@ -62,22 +62,25 @@
             </div>
         </main>
     </header>
-    <main class="w-max-[1200px] mx-auto">
+    <main class="w-full max-w-[1200px] mx-auto max-[577px]:px-5">
 
         <!-- about section starts here -->
 
         <section class="text-center mt-15 mb-28">
             <h2 class="text-5xl font-bold mb-2">About The Podcast</h2>
-            <p class="font-normal text-gray-400 leading-8">TechWave is your go-to podcast for staying ahead in the
+            <p class="font-normal text-gray-400 leading-8 max-[577px]:hidden">TechWave is your go-to podcast for staying ahead in the
                 fast-paced world of technology.
                 <br>We break down complex topics into digestible insights, explore productivity strategies that actually
                 work,
                 <br>and share stories of personal growth from industry leaders.
             </p>
+            <p class="font-normal text-gray-400 leading-8 min-[577px]:hidden">TechWave is your go-to podcast for staying ahead in the fast-paced world of technology. We break down complex topics into digestible insights, explore productivity strategies that actually work, and share stories of personal growth from industry leaders.
+
+            </p>
             <p class="font-normal text-gray-400 mt-10">Join thousands of young professionals and tech enthusiasts who
                 start their day with TechWave.</p>
             <hr class="w-full  border-gray-800 my-20">
-            <div class="grid grid-cols-4 gap-20">
+            <div class="grid grid-cols-4 gap-20 max-[577px]:grid-cols-2">
                 <div class="flex flex-col gap-4">
                     <h3 class="font-extrabold secondary-text-color text-5xl">150k+</h3>
                     <p class="font-light text-gray-400">MONTHLY LISTENERS</p>
@@ -101,11 +104,11 @@
 
     <!-- why choose section -->
 
-    <section class="py-28 text-center secondary-bg-color">
-        <h2 class="text-5xl font-bold mb-2">Why Choose TechWave</h2>
-        <main class="w-max-[1200px] mt-10 mx-auto grid grid-cols-3 grid-rows-3 gap-8 text-start">
+    <section class="py-28 text-center secondary-bg-color max-[577px]:px-5">
+        <h2 class="text-5xl font-bold mb-2 max-[577px]:text-[36px]">Why Choose TechWave</h2>
+        <main class="w-full max-w-[1200px] mt-10 mx-auto grid grid-cols-3 grid-rows-3 gap-8 text-start max-[577px]:grid-cols-1">
             <div
-                class="flex flex-col justify-center gap-3.5 p-10 card-bg rounded-4xl row-span-2 hover:scale-[1.025] hover:shadow shadow-blue-800">
+                class="flex flex-col justify-center gap-3.5 p-10 card-bg rounded-4xl row-span-2 max-[577px]:row-span-1 hover:scale-[1.025] hover:shadow shadow-blue-800">
                 <img src="./assets/headphone.png" alt="" class="w-14">
                 <h3 class="text-2xl font-bold">Premium Audio Quality</h3>
                 <p class="font-light text-gray-400 leading-6">Experience crystal-clear sound with professional-grade
@@ -113,21 +116,21 @@
                     across all devices and platforms.</p>
             </div>
             <div
-                class="flex flex-col justify-center gap-3.5 p-10 card-bg rounded-4xl col-span-2 hover:scale-[1.025] hover:shadow shadow-blue-800">
+                class="flex flex-col justify-center gap-3.5 p-10 card-bg rounded-4xl col-span-2 max-[577px]:col-span-1 hover:scale-[1.025] hover:shadow shadow-blue-800">
                 <img src="./assets/device.png" alt="" class="w-14">
                 <h3 class="text-2xl font-bold">Mobile Friendly</h3>
                 <p class="font-light text-gray-400 leading-6">Listen on the go with seamless mobile experience and
                     offline downloads.</p>
             </div>
             <div
-                class="flex flex-col justify-center gap-3.5 p-10 card-bg rounded-4xl col-span-2 hover:scale-[1.025] hover:shadow shadow-blue-800">
+                class="flex flex-col justify-center gap-3.5 p-10 card-bg rounded-4xl col-span-2 max-[577px]:col-span-1 hover:scale-[1.025] hover:shadow shadow-blue-800">
                 <img src="./assets/location.png" alt="" class="w-14">
                 <h3 class="text-2xl font-bold">Global Community</h3>
                 <p class="font-light text-gray-400 leading-6">Connect with tech enthusiasts from over 120 countries
                     worldwide.</p>
             </div>
             <div
-                class="flex flex-col justify-center gap-3.5 p-10 card-bg rounded-4xl col-span-2 hover:scale-[1.025] hover:shadow shadow-blue-800">
+                class="flex flex-col justify-center gap-3.5 p-10 card-bg rounded-4xl col-span-2 max-[577px]:col-span-1 hover:scale-[1.025] hover:shadow shadow-blue-800">
                 <img src="./assets/flash.png" alt="" class="w-14">
                 <h3 class="text-2xl font-bold">Exclusive Interviews</h3>
                 <p class="font-light text-gray-400 leading-6">Get unprecedented access to industry titans, startup
@@ -144,14 +147,14 @@
         </main>
     </section>
 
-    <main class="w-max-[1200px] mx-auto py-32 text-center flex flex-col gap-32">
+    <main class="w-full max-w-[1200px] mx-auto py-32 text-center flex flex-col gap-32 max-[577px]:px-5 max-[577px]:p-10 max-[577px]:gap-16">
         <!-- feaured episodes section here -->
 
         <section>
             <h2 class="text-5xl font-bold mb-2">Featured Episodes</h2>
-            <div class="grid grid-cols-3  mt-10 text-start gap-8">
+            <div class="grid grid-cols-3  max-[577px]:grid-cols-1 mt-10 text-start gap-8">
                 <div class="card-bg rounded-4xl hover:-translate-y-2 hover:shadow">
-                    <iframe width="100%" height="215"
+                    <iframe width="100%" height="225"
                         src="https://www.youtube.com/embed/ahLa9QL7KCI?si=LY6n6gXqnp7LlZPp" title="YouTube video player"
                         frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -167,7 +170,7 @@
                     </div>
                 </div>
                 <div class="card-bg rounded-4xl hover:-translate-y-2 hover:shadow">
-                    <iframe width="100%" height="215"
+                    <iframe width="100%" height="225"
                         src="https://www.youtube.com/embed/TahmbZi1EiI?si=jfedHosTqDzNecA8" title="YouTube video player"
                         frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -183,7 +186,7 @@
                     </div>
                 </div>
                 <div class="card-bg rounded-4xl hover:-translate-y-2 hover:shadow">
-                    <iframe width="100%" height="215"
+                    <iframe width="100%" height="225"
                         src="https://www.youtube.com/embed/ngUPIhogFy8?si=LX3trEpNV-5IXf8P" title="YouTube video player"
                         frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -205,17 +208,17 @@
 
         <section>
             <h2 class="text-5xl font-bold mb-2">Meet the Host</h2>
-            <div class="card-bg p-10 flex gap-6 rounded-4xl text-start mt-10 hover:-translate-y-2 hover:shadow">
-                <div class="rounded-full" class="w-[20%]">
+            <div class="card-bg p-10 flex gap-6 rounded-4xl text-start mt-10 hover:-translate-y-2 hover:shadow max-[577px]:flex-col">
+                <div class="rounded-full max-[577px]:w-full max-[577px]:justify-center max-[577px]:flex">
                     <img src="./assets/host.png" alt="Alex Kumar - The host">
                 </div>
-                <div class="flex flex-col gap-4 w-[80%]">
+                <div class="flex flex-col gap-4 w-[80%] max-[577px]:w-full max-[577px]:text-center">
                     <h4 class="text-[32px]">Alex Kumar</h4>
                     <p class="font-light text-gray-400 leading-6">Tech entrepreneur, productivity expert, and lifelong
                         learner. Alex has been in the tech industry for over 10 years, working with startups and Fortune
                         500 companies. Through TechWave, Alex shares insights from industry leaders and practical advice
                         for anyone looking to grow in tech.</p>
-                    <ul class="flex gap-2">
+                    <ul class="flex gap-2 max-[577px]:justify-center max-[577px]:flex">
                         <li
                             class="border-2 border-gray-800 p-2.5 rounded-full grid place-items-center hover:-translate-y-1.5 hover:shadow shadow-blue-300">
                             <a href="#">
@@ -248,12 +251,12 @@
 
     <!-- this is footer -->
 
-    <footer class="footer bg-contain bg-center">
-        <main class="py-32 flex flex-col gap-8 w-[540px] mx-auto text-center">
+    <footer class="footer bg-contain bg-center max-[577px]:bg-no-repeat max-[577px]:bg-cover max-[577px]:px-5">
+        <main class="py-32  max-[577px]:py-10 flex flex-col gap-8 w-[540px] mx-auto text-center">
             <a href="#" class="flex justify-center">
-                <img src="./assets/logo.png" alt="" class="h-[60px]">
+                <img src="./assets/logo.png" alt="" class="h-[60px] max-[577px]:h-[42px]">
             </a>
-            <ul class="flex justify-between">
+            <ul class="flex justify-between max-[577px]:flex-wrap gap-4 max-[577px]:w-[256px] mx-auto max-[577px]:justi">
                 <li>
                     <a href="#" class="flex gap-2 items-center">
                         <img class="h-full" src="./assets/spotify.png" alt="spotify">
