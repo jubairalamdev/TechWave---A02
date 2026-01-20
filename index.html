@@ -14,36 +14,38 @@
     <!-- navbar section here -->
 
     <nav class="border-b-3 border-blue-950 py-4 fixed top-0 w-full z-50 primary-bg-color">
-        <main class="flex w-[1200px] mx-auto justify-between items-center">
+        <main class="flex w-max-[1200px] mx-auto justify-between items-center max-[577px]:px-5 max-[577px]:justify-between">
             <a href="#">
-                <img src="./assets/logo.png" alt="" class="h-[36px]">
+                <img src="./assets/logo.png" alt="" class="max-[577px]:h-5 h-[32px]">
             </a>
-            <ul class="flex gap-8 text-gray-300">
+            <ul class="flex gap-8 text-gray-300 max-[577px]:collapse">
                 <li class="hover:border-b-2 hover:border-green-400"><a href="#">About</a></li>
                 <li class="hover:border-b-2 hover:border-green-400"><a href="#">Episodes</a></li>
                 <li class="hover:border-b-2 hover:border-green-400"><a href="#">Host</a></li>
             </ul>
             <button
-                class="flex gap-1 primary-gradient-bg-color py-3 px-4 rounded-full font-medium hover:cursor-pointer hover:scale-[1.025]">
+                class="flex gap-1 primary-gradient-bg-color py-3 px-4 rounded-full font-medium hover:cursor-pointer hover:scale-[1.025] max-[577px]:collapse">
                 Subscribe
                 <img src="./assets/ArrowRight.png" alt="">
+            </button>
+            <button class="min-[577px]:collapse">
+                <img src="./assets/hamburger-menu.png" alt="menu-icon" class="w-6">
             </button>
         </main>
     </nav>
 
     <!-- Hero header section here -->
 
-    <header class="header-section h-[750px] bg-contain bg-center  mt-20">
-        <main class="flex w-[1200px] mx-auto flex flex-col justify-center items-center h-full relative">
-            <div
-                class="hero-circle py-[85px] px-[115px] rounded-full bg-center bg-cover bg-no-repeat mb-10 hover:rotate-12 hover:scale-[1.05] relative">
-                <img src="./assets/microphone.png" alt="" class="hero-mic-img">
+    <header class="header-section h-[750px] max-[577px]:h-[540px] bg-contain bg-center  mt-20 max-[577px]:bg-no-repeat max-[577px]:bg-cover">
+        <main class="flex w-max-[1200px] mx-auto flex flex-col justify-center items-center h-full relative">
+            <div class="hero-circle py-[85px] px-[115px] rounded-full bg-center bg-cover bg-no-repeat mb-10 hover:rotate-12 hover:scale-[1.05] relative max-[577px]:px-[77px] max-[577px]:py-[60px]">
+                <img src="./assets/microphone.png" alt="" class="hero-mic-img max-[577px]:w-[70px]">
             </div>
             <div
-                class="py-2 px-4 text-lg text-blue-950 absolute rounded-full font-bold badge-glow top-[15%] right-[37%] hover:-translate-y-1.5 hover:shadow">
+                class="py-2 px-4 text-lg text-blue-950 absolute rounded-full font-bold badge-glow top-[15%] right-[37%] hover:-translate-y-1.5 hover:shadow max-[577px]:top-[10%] max-[577px]:right-[30%]">
                 NEW
             </div>
-            <h1 class="text-6xl font-extrabold mb-2">TechWave</h1>
+            <h1 class="text-6xl font-extrabold mb-2 max-[577px]:text-[45px]">TechWave</h1>
             <p class="mb-6 font-normal text-gray-400">Your daily dose of tech insights, productivity hacks, and personal
                 growth</p>
             <div class="flex gap-2">
@@ -60,7 +62,7 @@
             </div>
         </main>
     </header>
-    <main class="w-[1200px] mx-auto">
+    <main class="w-max-[1200px] mx-auto">
 
         <!-- about section starts here -->
 
@@ -101,7 +103,7 @@
 
     <section class="py-28 text-center secondary-bg-color">
         <h2 class="text-5xl font-bold mb-2">Why Choose TechWave</h2>
-        <main class="w-[1200px] mt-10 mx-auto grid grid-cols-3 grid-rows-3 gap-8 text-start">
+        <main class="w-max-[1200px] mt-10 mx-auto grid grid-cols-3 grid-rows-3 gap-8 text-start">
             <div
                 class="flex flex-col justify-center gap-3.5 p-10 card-bg rounded-4xl row-span-2 hover:scale-[1.025] hover:shadow shadow-blue-800">
                 <img src="./assets/headphone.png" alt="" class="w-14">
@@ -142,7 +144,7 @@
         </main>
     </section>
 
-    <main class="w-[1200px] mx-auto py-32 text-center flex flex-col gap-32">
+    <main class="w-max-[1200px] mx-auto py-32 text-center flex flex-col gap-32">
         <!-- feaured episodes section here -->
 
         <section>
