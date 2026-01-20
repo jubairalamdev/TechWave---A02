@@ -69,3 +69,9 @@
 .card-bg {
     background-color: rgba(53, 17, 101, 0.4);
 }
+
+/* footer section styles */
+
+.footer {
+    background-image: url("../assets/footer-bg.png");
+}
